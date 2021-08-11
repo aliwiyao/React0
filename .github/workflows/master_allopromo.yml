@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.301'
+        dotnet-version: '5.0.x'
         include-prerelease: true
 
     - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'allopromo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b4c15ed04fa342d79e438d6563a45ede }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_54e9a301c6504264bc45c23b8ae03d17 }}
         package: .
